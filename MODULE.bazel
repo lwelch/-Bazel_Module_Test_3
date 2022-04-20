@@ -2,7 +2,7 @@
 
 module(
   name = "compilers",
-  version = "1.0.2",
+  version = "1.0.3",
   compatibility_level = 1,
   toolchains_to_register = [
     "@compilers//toolchains/ti:ti_c66_cc_toolchain",

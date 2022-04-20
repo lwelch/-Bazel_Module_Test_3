@@ -82,6 +82,7 @@ toolchain(
     name = "ti_c66_cc_toolchain",
     tags = [""],
     target_settings = [],
+    target_compatible_with = ["@platforms//cpu:ppc"], # Use PPC temporarily, because C66 isn't available
     toolchain = ":ti_c66_toolchain",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
     visibility = ["//visibility:public"],

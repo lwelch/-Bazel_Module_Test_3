@@ -54,7 +54,7 @@ toolchain(
     toolchain = ":ti_arm_toolchain",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
     target_compatible_with = ["@platforms//cpu:arm"],
-    visibility = [""],
+    visibility = ["//visibility:public"],
 )
 
 cc_toolchain(
@@ -84,5 +84,5 @@ toolchain(
     target_settings = [],
     toolchain = ":ti_c66_toolchain",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
-    visibility = [""],
+    visibility = ["//visibility:public"],
 )
